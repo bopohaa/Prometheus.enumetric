@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace>PrometheusEnumetric</RootNamespace>
+    <PackageId>Prometheus.enumetric</PackageId>
+    <Authors>Nikolay Vorobev</Authors>
+    <Company>Pulter</Company>
+    <Copyright>2019</Copyright>
+    <PackageTags>Prometheus enum static metric factory</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.2.0</Version>
+    <Description>Enum-based Prometheus factory</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prometheus.Client" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>
