@@ -12,6 +12,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.2.0</Version>
     <Description>Enum-based Prometheus factory</Description>
+    <PackageIconUrl>https://raw.githubusercontent.com/bopohaa/Prometheus.enumetric/master/icon.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/bopohaa/Prometheus.enumetric</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bopohaa/Prometheus.enumetric</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
