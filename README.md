@@ -58,13 +58,10 @@ Assert.Equal(0.2D, counter.Get(MetricLabel.SomeValue2, MetricName.Foo).Value);
 ```C#
 var counter = new EnumCounter<MetricLabel, MetricName>("namespace_subsystem_app_", "_total", "test count metric", false, false, Array.Empty<KeyValue>(), factory);
 
-counter[MetricName.Foo].Inc();
-
 using (counter.CreateScope(MetricLabel.SomeValue1))
 {
     Assert.True(EnumCounter<MetricName>.TryGetScoped(MetricName.Foo, out var scoped));
     scoped.Inc(0.1D);
 }
-Assert.Equal(1, counter[MetricName.Foo].Value);
 Assert.Equal(0.1D, counter.Get(MetricLabel.SomeValue1, MetricName.Foo).Value);
 ```
