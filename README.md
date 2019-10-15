@@ -1,5 +1,5 @@
 # Summary
-Enum-based Prometheus factory
+Enum-based Prometheus metric factory.
 This library helps to create and receive prometheus metrics by enum values.
 
 # Features
